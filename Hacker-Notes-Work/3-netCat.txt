@@ -1,0 +1,3 @@
+nc host port => to connect to host 
+
+telnet 149.248.44.52 => to see some information like user and password in port 23

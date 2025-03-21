@@ -1,0 +1,9 @@
+1-cat /proc/sys/net/ipv4/ip_forward
+if 0 write 1 
+echo 1 /proc/sys/net/ipv4/ip_forward
+if 1 this good
+
+2-sudo apt install ettercap-graphical
+
+
+3-sudo ettercap -G => to run

