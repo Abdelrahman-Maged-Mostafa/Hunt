@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Test</title>
+  </head>
+  <body>
+    <form
+      id="csrf-test-form"
+      action="https://gitlab.com/assets/webpack/shortcutsBundle.c03719fd.chunk.js.map"
+      method="GET"
+    >
+      <button type="submit">Test CSRF</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("csrf-test-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var xhr = new XMLHttpRequest();
+          xhr.open(
+            "GET",
+            "https://gitlab.com/assets/webpack/shortcutsBundle.c03719fd.chunk.js.map",
+            true
+          );
+
+          // Set the necessary headers
+          xhr.setRequestHeader(
+            "Content-Type",
+            "application/x-www-form-urlencoded"
+          );
+          // xhr.setRequestHeader("X-Csrf-Token", "YOUR_CSRF_TOKEN");
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+              var status = xhr.status;
+              if (status === 0 || (status >= 200 && status < 400)) {
+                // The request was successful
+                console.log("Response received:", xhr.responseText);
+              } else {
+                // Something went wrong
+                console.log("Error:", xhr.statusText);
+              }
+            }
+          };
+
+          // Get form data and send request
+          var formData = new FormData(
+            document.getElementById("csrf-test-form")
+          );
+          var encodedData = new URLSearchParams(formData).toString();
+          xhr.send(encodedData);
+
+          // Log request details
+          console.log(
+            "Sending request to: " +
+              "https://gitlab.com/assets/webpack/shortcutsBundle.c03719fd.chunk.js.map"
+          );
+          console.log("_method=GET");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload File with Fetch</title>
+  </head>
+  <body>
+    <h1>Upload File with Fetch</h1>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" name="file" />
+      <button type="submit">Upload File</button>
+    </form>
+    <img id="image" src="" alt="" />
+    <script>
+      document
+        .getElementById("uploadForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // منع الإرسال التلقائي للنموذج
+
+          const fileInput = document.getElementById("fileInput");
+          const file = fileInput.files[0];
+
+          const formData = new FormData();
+          formData.append("file", file, "index.js");
+
+          fetch("https://gitlab.com/api/v4/projects/67924414/uploads", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Request succeeded with JSON response:", data);
+              document.getElementById(
+                "image"
+              ).src = `https://gitlab.com/api/v4/projects/67924414${data.url}`;
+            })
+            .catch((error) => console.error("Request failed:", error));
+        });
+    </script>
+  </body>
+</html>

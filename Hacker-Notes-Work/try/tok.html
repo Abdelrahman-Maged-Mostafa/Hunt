@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHR Test</title>
+  </head>
+  <body>
+    <h1>Test XHR with Credentials</h1>
+    <p id="poda"></p>
+    <img src="https://gitlab.com/api/v4/user" alt="" />
+    <script>
+      // إنشاء طلب XHR
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://gitlab.com/api/v4/user", true);
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          document.getElementById("poda").textContent = xhr.responseText;
+          console.log("Response: ", xhr.responseText);
+        } else {
+          document.getElementById(
+            "poda"
+          ).textContent = `${xhr.status},${xhr.statusText}`;
+          console.error("Error: ", xhr.status, xhr.statusText);
+        }
+      };
+      xhr.send();
+    </script>
+  </body>
+</html>

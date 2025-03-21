@@ -1,0 +1,15 @@
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://gitlab.com/uploads/-/system/project/avatar/67386491/poda.png");
+
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        console.log("Response Status:", xhr.status);
+        console.log("Response", xhr.responseText);
+        
+        // احصل على رؤوس الرد، بما في ذلك الكوكيز
+        var responseHeaders = xhr.getAllResponseHeaders()
+        console.log("Response Headers:", responseHeaders);
+    }
+};
+
+xhr.send();

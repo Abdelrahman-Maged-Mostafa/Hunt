@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Test</title>
+  </head>
+  <body>
+    <h1>اختبار CSRF</h1>
+    <iframe
+      src="https://gitlab.com/-/error-illustrations/error-422-lg.svg"
+      id="hidden-iframe"
+      name="hidden-iframe"
+    ></iframe>
+    <script>
+      console.log(
+        document.getElementById("hidden-iframe").contentWindow.document.cookie
+      );
+    </script>
+  </body>
+</html>

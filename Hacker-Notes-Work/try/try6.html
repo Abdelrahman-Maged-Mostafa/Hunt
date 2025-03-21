@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Test with GET Method</title>
+  </head>
+  <body>
+    <iframe
+      id="target-iframe"
+      name="target-iframe"
+      style="display: none"
+      src="https://koara-shop.netlify.app/"
+    >
+      <script>
+        console.log(document.cookie);
+      </script>
+    </iframe>
+
+    <form
+      id="csrf-test-form"
+      action="https://koara-shop.netlify.app/"
+      method="GET"
+      target="target-iframe"
+    >
+      <!-- Add any other required hidden fields or parameters here -->
+      <input type="hidden" name="X-Csrf-Token" value="YOUR_CSRF_TOKEN" />
+      <button type="submit">Test CSRF</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("csrf-test-form")
+        .addEventListener("submit", function (event) {
+          console.log(event);
+        });
+
+      // Wait for a short period before trying to access iframe content
+      //   setTimeout(function () {
+      //     var iframe = document.getElementById("target-iframe");
+      //     try {
+      //       var iframeDoc =
+      //         iframe.contentDocument || iframe.contentWindow.document;
+      //       console.log("iframe content:", iframeDoc.body.innerHTML);
+
+      //       // Accessing the cookies from iframe
+      //       var responseCookies = iframeDoc.cookie;
+      //       console.log("Cookies received:", responseCookies);
+      //     } catch (e) {
+      //       console.log("Cannot access iframe content:", e);
+      //     }
+      //   }, 2000);
+      // Delay for 2 seconds
+
+      // Manually submit the form for testing
+      //   document.getElementById("csrf-test-form").submit();
+      async function send() {
+        const res = await fetch("https://koara-shop.netlify.app/");
+        console.log(res);
+      }
+    </script>
+  </body>
+</html>

