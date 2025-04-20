@@ -1,0 +1,11 @@
+https://dashboard-failover.doppler.com/
+https://helm.doppler.com/
+https://mktem.doppler.com/
+https://mktlp.doppler.com/
+https://packages.doppler.com/
+https://trust.doppler.com/
+https://www.doppler.com/
+https://api-failover.doppler.com
+https://community.doppler.com
+https://staging-api-failover.doppler.com
+https://staging-api.doppler.com

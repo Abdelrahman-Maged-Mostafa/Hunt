@@ -1,0 +1,186 @@
+200 ,  , RES:
+{"errors":[{"message":"Field must have selections (query 'try' returns Query but has no selections. Did you mean 'try { ... }'?)","locations":[{"line":1,"column":1}],"path":["query try"],"extensions":{"code":"selectionMismatch","nodeName":"query 'try'","typeName":"Query"}}]}
+200 , abuseReport , RES:
+{"errors":[{"message":"Field must have selections (field 'abuseReport' returns AbuseReport but has no selections. Did you mean 'abuseReport { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","abuseReport"],"extensions":{"code":"selectionMismatch","nodeName":"field 'abuseReport'","typeName":"AbuseReport"}}]}
+200 , user , RES:
+{"errors":[{"message":"Field must have selections (field 'user' returns UserCore but has no selections. Did you mean 'user { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","user"],"extensions":{"code":"selectionMismatch","nodeName":"field 'user'","typeName":"UserCore"}}]}
+200 , namespace , RES:
+{"errors":[{"message":"Field must have selections (field 'namespace' returns Namespace but has no selections. Did you mean 'namespace { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","namespace"],"extensions":{"code":"selectionMismatch","nodeName":"field 'namespace'","typeName":"Namespace"}}]}
+200 , gitpodEnabled , RES:
+{"data":{"gitpodEnabled":true}}
+200 , groups , RES:
+{"errors":[{"message":"Field must have selections (field 'groups' returns GroupConnection but has no selections. Did you mean 'groups { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","groups"],"extensions":{"code":"selectionMismatch","nodeName":"field 'groups'","typeName":"GroupConnection"}}]}
+200 , organization , RES:
+{"errors":[{"message":"Field must have selections (field 'organization' returns Organization but has no selections. Did you mean 'organization { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","organization"],"extensions":{"code":"selectionMismatch","nodeName":"field 'organization'","typeName":"Organization"}}]}
+200 , organizations , RES:
+{"errors":[{"message":"Field must have selections (field 'organizations' returns OrganizationConnection but has no selections. Did you mean 'organizations { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","organizations"],"extensions":{"code":"selectionMismatch","nodeName":"field 'organizations'","typeName":"OrganizationConnection"}}]}
+200 , snippets , RES:
+{"errors":[{"message":"Field must have selections (field 'snippets' returns SnippetConnection but has no selections. Did you mean 'snippets { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","snippets"],"extensions":{"code":"selectionMismatch","nodeName":"field 'snippets'","typeName":"SnippetConnection"}}]}
+200 , timelogs , RES:
+{"errors":[{"message":"Field must have selections (field 'timelogs' returns TimelogConnection but has no selections. Did you mean 'timelogs { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","timelogs"],"extensions":{"code":"selectionMismatch","nodeName":"field 'timelogs'","typeName":"TimelogConnection"}}]}
+200 , workspaces , RES:
+{"errors":[{"message":"Field must have selections (field 'workspaces' returns WorkspaceConnection but has no selections. Did you mean 'workspaces { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","workspaces"],"extensions":{"code":"selectionMismatch","nodeName":"field 'workspaces'","typeName":"WorkspaceConnection"}}]}
+200 , project , RES:
+{"errors":[{"message":"Field must have selections (field 'project' returns Project but has no selections. Did you mean 'project { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","project"],"extensions":{"code":"selectionMismatch","nodeName":"field 'project'","typeName":"Project"}}]}
+200 , metadata , RES:
+{"errors":[{"message":"Field must have selections (field 'metadata' returns Metadata but has no selections. Did you mean 'metadata { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","metadata"],"extensions":{"code":"selectionMismatch","nodeName":"field 'metadata'","typeName":"Metadata"}}]}
+200 , issue , RES:
+{"errors":[{"message":"Field must have selections (field 'issue' returns Issue but has no selections. Did you mean 'issue { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","issue"],"extensions":{"code":"selectionMismatch","nodeName":"field 'issue'","typeName":"Issue"}}]}
+200 , todo , RES:
+{"errors":[{"message":"Field must have selections (field 'todo' returns Todo but has no selections. Did you mean 'todo { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","todo"],"extensions":{"code":"selectionMismatch","nodeName":"field 'todo'","typeName":"Todo"}}]}
+200 , group , RES:
+{"errors":[{"message":"Field must have selections (field 'group' returns Group but has no selections. Did you mean 'group { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","group"],"extensions":{"code":"selectionMismatch","nodeName":"field 'group'","typeName":"Group"}}]}
+200 , users , RES:
+{"errors":[{"message":"Field must have selections (field 'users' returns UserCoreConnection but has no selections. Did you mean 'users { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","users"],"extensions":{"code":"selectionMismatch","nodeName":"field 'users'","typeName":"UserCoreConnection"}}]}
+200 , milestone , RES:
+{"errors":[{"message":"Field must have selections (field 'milestone' returns Milestone but has no selections. Did you mean 'milestone { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","milestone"],"extensions":{"code":"selectionMismatch","nodeName":"field 'milestone'","typeName":"Milestone"}}]}
+200 , iteration , RES:
+{"errors":[{"message":"Field must have selections (field 'iteration' returns Iteration but has no selections. Did you mean 'iteration { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","iteration"],"extensions":{"code":"selectionMismatch","nodeName":"field 'iteration'","typeName":"Iteration"}}]}
+200 , issues , RES:
+{"errors":[{"message":"Field must have selections (field 'issues' returns IssueConnection but has no selections. Did you mean 'issues { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","issues"],"extensions":{"code":"selectionMismatch","nodeName":"field 'issues'","typeName":"IssueConnection"}}]}
+200 , jobs , RES:
+{"errors":[{"message":"Field must have selections (field 'jobs' returns CiJobConnection but has no selections. Did you mean 'jobs { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","jobs"],"extensions":{"code":"selectionMismatch","nodeName":"field 'jobs'","typeName":"CiJobConnection"}}]}
+200 , runner , RES:
+{"errors":[{"message":"Field must have selections (field 'runner' returns CiRunner but has no selections. Did you mean 'runner { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","runner"],"extensions":{"code":"selectionMismatch","nodeName":"field 'runner'","typeName":"CiRunner"}}]}
+200 , projects , RES:
+{"errors":[{"message":"Field must have selections (field 'projects' returns ProjectConnection but has no selections. Did you mean 'projects { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","projects"],"extensions":{"code":"selectionMismatch","nodeName":"field 'projects'","typeName":"ProjectConnection"}}]}
+200 , topics , RES:
+{"errors":[{"message":"Field must have selections (field 'topics' returns TopicConnection but has no selections. Did you mean 'topics { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","topics"],"extensions":{"code":"selectionMismatch","nodeName":"field 'topics'","typeName":"TopicConnection"}}]}
+200 , mergeRequest , RES:
+{"errors":[{"message":"Field must have selections (field 'mergeRequest' returns MergeRequest but has no selections. Did you mean 'mergeRequest { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","mergeRequest"],"extensions":{"code":"selectionMismatch","nodeName":"field 'mergeRequest'","typeName":"MergeRequest"}}]}
+200 , package , RES:
+{"errors":[{"message":"Field must have selections (field 'package' returns PackageDetailsType but has no selections. Did you mean 'package { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","package"],"extensions":{"code":"selectionMismatch","nodeName":"field 'package'","typeName":"PackageDetailsType"}}]}
+200 , note , RES:
+{"errors":[{"message":"Field must have selections (field 'note' returns Note but has no selections. Did you mean 'note { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","note"],"extensions":{"code":"selectionMismatch","nodeName":"field 'note'","typeName":"Note"}}]}
+200 , containerRepository , RES:
+{"errors":[{"message":"Field must have selections (field 'containerRepository' returns ContainerRepositoryDetails but has no selections. Did you mean 'containerRepository { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","containerRepository"],"extensions":{"code":"selectionMismatch","nodeName":"field 'containerRepository'","typeName":"ContainerRepositoryDetails"}}]}
+200 , addOnPurchase , RES:
+{"errors":[{"message":"Field must have selections (field 'addOnPurchase' returns AddOnPurchase but has no selections. Did you mean 'addOnPurchase { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","addOnPurchase"],"extensions":{"code":"selectionMismatch","nodeName":"field 'addOnPurchase'","typeName":"AddOnPurchase"}}]}
+200 , ciQueueingHistory , RES:
+{"errors":[{"message":"Field must have selections (field 'ciQueueingHistory' returns QueueingDelayHistory but has no selections. Did you mean 'ciQueueingHistory { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciQueueingHistory"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciQueueingHistory'","typeName":"QueueingDelayHistory"}}]}
+200 , ciVariables , RES:
+{"errors":[{"message":"Field must have selections (field 'ciVariables' returns CiInstanceVariableConnection but has no selections. Did you mean 'ciVariables { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciVariables"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciVariables'","typeName":"CiInstanceVariableConnection"}}]}
+200 , memberRoles , RES:
+{"errors":[{"message":"Field must have selections (field 'memberRoles' returns MemberRoleConnection but has no selections. Did you mean 'memberRoles { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","memberRoles"],"extensions":{"code":"selectionMismatch","nodeName":"field 'memberRoles'","typeName":"MemberRoleConnection"}}]}
+200 , runners , RES:
+{"errors":[{"message":"Field must have selections (field 'runners' returns CiRunnerConnection but has no selections. Did you mean 'runners { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","runners"],"extensions":{"code":"selectionMismatch","nodeName":"field 'runners'","typeName":"CiRunnerConnection"}}]}
+200 , standardRole , RES:
+{"errors":[{"message":"Field must have selections (field 'standardRole' returns StandardRole but has no selections. Did you mean 'standardRole { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","standardRole"],"extensions":{"code":"selectionMismatch","nodeName":"field 'standardRole'","typeName":"StandardRole"}}]}
+200 , standardRoles , RES:
+{"errors":[{"message":"Field must have selections (field 'standardRoles' returns StandardRoleConnection but has no selections. Did you mean 'standardRoles { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","standardRoles"],"extensions":{"code":"selectionMismatch","nodeName":"field 'standardRoles'","typeName":"StandardRoleConnection"}}]}
+200 , vulnerabilities , RES:
+{"errors":[{"message":"Field must have selections (field 'vulnerabilities' returns VulnerabilityConnection but has no selections. Did you mean 'vulnerabilities { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","vulnerabilities"],"extensions":{"code":"selectionMismatch","nodeName":"field 'vulnerabilities'","typeName":"VulnerabilityConnection"}}]}
+200 , vulnerabilitiesCountByDay , RES:
+{"errors":[{"message":"Field must have selections (field 'vulnerabilitiesCountByDay' returns VulnerabilitiesCountByDayConnection but has no selections. Did you mean 'vulnerabilitiesCountByDay { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","vulnerabilitiesCountByDay"],"extensions":{"code":"selectionMismatch","nodeName":"field 'vulnerabilitiesCountByDay'","typeName":"VulnerabilitiesCountByDayConnection"}}]}
+200 , workItem , RES:
+{"errors":[{"message":"Field must have selections (field 'workItem' returns WorkItem but has no selections. Did you mean 'workItem { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","workItem"],"extensions":{"code":"selectionMismatch","nodeName":"field 'workItem'","typeName":"WorkItem"}}]}
+200 , memberRole , RES:
+{"errors":[{"message":"Field must have selections (field 'memberRole' returns MemberRole but has no selections. Did you mean 'memberRole { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","memberRole"],"extensions":{"code":"selectionMismatch","nodeName":"field 'memberRole'","typeName":"MemberRole"}}]}
+200 , vulnerability , RES:
+{"errors":[{"message":"Field must have selections (field 'vulnerability' returns Vulnerability but has no selections. Did you mean 'vulnerability { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","vulnerability"],"extensions":{"code":"selectionMismatch","nodeName":"field 'vulnerability'","typeName":"Vulnerability"}}]}
+200 , projectSecretsManager , RES:
+{"errors":[{"message":"Field must have selections (field 'projectSecretsManager' returns ProjectSecretsManager but has no selections. Did you mean 'projectSecretsManager { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","projectSecretsManager"],"extensions":{"code":"selectionMismatch","nodeName":"field 'projectSecretsManager'","typeName":"ProjectSecretsManager"}}]}
+200 , abuseReportLabels , RES:
+{"errors":[{"message":"Field must have selections (field 'abuseReportLabels' returns LabelConnection but has no selections. Did you mean 'abuseReportLabels { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","abuseReportLabels"],"extensions":{"code":"selectionMismatch","nodeName":"field 'abuseReportLabels'","typeName":"LabelConnection"}}]}
+200 , addOnPurchases , RES:
+{"errors":[{"message":"Field must have selections (field 'addOnPurchases' returns AddOnPurchase but has no selections. Did you mean 'addOnPurchases { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","addOnPurchases"],"extensions":{"code":"selectionMismatch","nodeName":"field 'addOnPurchases'","typeName":"AddOnPurchase"}}]}
+200 , aiFeatureSettings , RES:
+{"errors":[{"message":"Field must have selections (field 'aiFeatureSettings' returns AiFeatureSettingConnection but has no selections. Did you mean 'aiFeatureSettings { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","aiFeatureSettings"],"extensions":{"code":"selectionMismatch","nodeName":"field 'aiFeatureSettings'","typeName":"AiFeatureSettingConnection"}}]}
+200 , aiMessages , RES:
+{"errors":[{"message":"Field must have selections (field 'aiMessages' returns AiMessageConnection but has no selections. Did you mean 'aiMessages { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","aiMessages"],"extensions":{"code":"selectionMismatch","nodeName":"field 'aiMessages'","typeName":"AiMessageConnection"}}]}
+200 , aiSelfHostedModels , RES:
+{"errors":[{"message":"Field must have selections (field 'aiSelfHostedModels' returns AiSelfHostedModelConnection but has no selections. Did you mean 'aiSelfHostedModels { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","aiSelfHostedModels"],"extensions":{"code":"selectionMismatch","nodeName":"field 'aiSelfHostedModels'","typeName":"AiSelfHostedModelConnection"}}]}
+200 , aiSlashCommands , RES:
+{"errors":[{"message":"Field must have selections (field 'aiSlashCommands' returns SlashCommand but has no selections. Did you mean 'aiSlashCommands { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","aiSlashCommands"],"extensions":{"code":"selectionMismatch","nodeName":"field 'aiSlashCommands'","typeName":"SlashCommand"}}]}
+200 , auditEventDefinitions , RES:
+{"errors":[{"message":"Field must have selections (field 'auditEventDefinitions' returns AuditEventDefinitionConnection but has no selections. Did you mean 'auditEventDefinitions { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","auditEventDefinitions"],"extensions":{"code":"selectionMismatch","nodeName":"field 'auditEventDefinitions'","typeName":"AuditEventDefinitionConnection"}}]}
+200 , auditEventsInstanceAmazonS3Configurations , RES:
+{"errors":[{"message":"Field must have selections (field 'auditEventsInstanceAmazonS3Configurations' returns InstanceAmazonS3ConfigurationTypeConnection but has no selections. Did you mean 'auditEventsInstanceAmazonS3Configurations { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","auditEventsInstanceAmazonS3Configurations"],"extensions":{"code":"selectionMismatch","nodeName":"field 'auditEventsInstanceAmazonS3Configurations'","typeName":"InstanceAmazonS3ConfigurationTypeConnection"}}]}
+200 , auditEventsInstanceStreamingDestinations , RES:
+{"errors":[{"message":"Field must have selections (field 'auditEventsInstanceStreamingDestinations' returns InstanceAuditEventStreamingDestinationConnection but has no selections. Did you mean 'auditEventsInstanceStreamingDestinations { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","auditEventsInstanceStreamingDestinations"],"extensions":{"code":"selectionMismatch","nodeName":"field 'auditEventsInstanceStreamingDestinations'","typeName":"InstanceAuditEventStreamingDestinationConnection"}}]}
+200 , blobSearch , RES:
+{"errors":[{"message":"Field must have selections (field 'blobSearch' returns BlobSearch but has no selections. Did you mean 'blobSearch { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","blobSearch"],"extensions":{"code":"selectionMismatch","nodeName":"field 'blobSearch'","typeName":"BlobSearch"}}]}
+200 , boardList , RES:
+{"errors":[{"message":"Field must have selections (field 'boardList' returns BoardList but has no selections. Did you mean 'boardList { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","boardList"],"extensions":{"code":"selectionMismatch","nodeName":"field 'boardList'","typeName":"BoardList"}}]}
+200 , ciApplicationSettings , RES:
+{"errors":[{"message":"Field must have selections (field 'ciApplicationSettings' returns CiApplicationSettings but has no selections. Did you mean 'ciApplicationSettings { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciApplicationSettings"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciApplicationSettings'","typeName":"CiApplicationSettings"}}]}
+200 , ciCatalogResource , RES:
+{"errors":[{"message":"Field must have selections (field 'ciCatalogResource' returns CiCatalogResource but has no selections. Did you mean 'ciCatalogResource { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciCatalogResource"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciCatalogResource'","typeName":"CiCatalogResource"}}]}
+200 , ciCatalogResources , RES:
+{"errors":[{"message":"Field must have selections (field 'ciCatalogResources' returns CiCatalogResourceConnection but has no selections. Did you mean 'ciCatalogResources { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciCatalogResources"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciCatalogResources'","typeName":"CiCatalogResourceConnection"}}]}
+200 , ciConfig , RES:
+{"errors":[{"message":"Field must have selections (field 'ciConfig' returns CiConfig but has no selections. Did you mean 'ciConfig { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciConfig"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciConfig'","typeName":"CiConfig"}}]}
+200 , ciMinutesUsage , RES:
+{"errors":[{"message":"Field must have selections (field 'ciMinutesUsage' returns CiMinutesNamespaceMonthlyUsageConnection but has no selections. Did you mean 'ciMinutesUsage { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciMinutesUsage"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciMinutesUsage'","typeName":"CiMinutesNamespaceMonthlyUsageConnection"}}]}
+200 , ciPipelineStage , RES:
+{"errors":[{"message":"Field must have selections (field 'ciPipelineStage' returns CiStage but has no selections. Did you mean 'ciPipelineStage { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","ciPipelineStage"],"extensions":{"code":"selectionMismatch","nodeName":"field 'ciPipelineStage'","typeName":"CiStage"}}]}
+200 , cloudConnectorStatus , RES:
+{"errors":[{"message":"Field must have selections (field 'cloudConnectorStatus' returns CloudConnectorStatus but has no selections. Did you mean 'cloudConnectorStatus { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","cloudConnectorStatus"],"extensions":{"code":"selectionMismatch","nodeName":"field 'cloudConnectorStatus'","typeName":"CloudConnectorStatus"}}]}
+200 , complianceRequirementControls , RES:
+{"errors":[{"message":"Field must have selections (field 'complianceRequirementControls' returns ComplianceRequirementControl but has no selections. Did you mean 'complianceRequirementControls { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","complianceRequirementControls"],"extensions":{"code":"selectionMismatch","nodeName":"field 'complianceRequirementControls'","typeName":"ComplianceRequirementControl"}}]}
+200 , currentLicense , RES:
+{"errors":[{"message":"Field must have selections (field 'currentLicense' returns CurrentLicense but has no selections. Did you mean 'currentLicense { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","currentLicense"],"extensions":{"code":"selectionMismatch","nodeName":"field 'currentLicense'","typeName":"CurrentLicense"}}]}
+200 , currentUser , RES:
+{"errors":[{"message":"Field must have selections (field 'currentUser' returns CurrentUser but has no selections. Did you mean 'currentUser { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","currentUser"],"extensions":{"code":"selectionMismatch","nodeName":"field 'currentUser'","typeName":"CurrentUser"}}]}
+200 , designManagement , RES:
+{"errors":[{"message":"Field must have selections (field 'designManagement' returns DesignManagement but has no selections. Did you mean 'designManagement { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","designManagement"],"extensions":{"code":"selectionMismatch","nodeName":"field 'designManagement'","typeName":"DesignManagement"}}]}
+200 , devopsAdoptionEnabledNamespaces , RES:
+{"errors":[{"message":"Field must have selections (field 'devopsAdoptionEnabledNamespaces' returns DevopsAdoptionEnabledNamespaceConnection but has no selections. Did you mean 'devopsAdoptionEnabledNamespaces { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","devopsAdoptionEnabledNamespaces"],"extensions":{"code":"selectionMismatch","nodeName":"field 'devopsAdoptionEnabledNamespaces'","typeName":"DevopsAdoptionEnabledNamespaceConnection"}}]}
+200 , duoWorkflowEvents , RES:
+{"errors":[{"message":"Field must have selections (field 'duoWorkflowEvents' returns DuoWorkflowEventConnection but has no selections. Did you mean 'duoWorkflowEvents { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","duoWorkflowEvents"],"extensions":{"code":"selectionMismatch","nodeName":"field 'duoWorkflowEvents'","typeName":"DuoWorkflowEventConnection"}}]}
+200 , duoWorkflowWorkflows , RES:
+{"errors":[{"message":"Field must have selections (field 'duoWorkflowWorkflows' returns DuoWorkflowConnection but has no selections. Did you mean 'duoWorkflowWorkflows { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","duoWorkflowWorkflows"],"extensions":{"code":"selectionMismatch","nodeName":"field 'duoWorkflowWorkflows'","typeName":"DuoWorkflowConnection"}}]}
+200 , echo , RES:
+{"errors":[{"message":"Field 'echo' is missing required arguments: text","locations":[{"line":2,"column":7}],"path":["query try","echo"],"extensions":{"code":"missingRequiredArguments","className":"Field","name":"echo","arguments":"text"}}]}
+200 , epicBoardList , RES:
+{"errors":[{"message":"Field must have selections (field 'epicBoardList' returns EpicList but has no selections. Did you mean 'epicBoardList { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","epicBoardList"],"extensions":{"code":"selectionMismatch","nodeName":"field 'epicBoardList'","typeName":"EpicList"}}]}
+200 , featureFlagEnabled , RES:
+{"errors":[{"message":"Field 'featureFlagEnabled' is missing required arguments: name","locations":[{"line":2,"column":7}],"path":["query try","featureFlagEnabled"],"extensions":{"code":"missingRequiredArguments","className":"Field","name":"featureFlagEnabled","arguments":"name"}}]}
+200 , frecentGroups , RES:
+{"errors":[{"message":"Field must have selections (field 'frecentGroups' returns Group but has no selections. Did you mean 'frecentGroups { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","frecentGroups"],"extensions":{"code":"selectionMismatch","nodeName":"field 'frecentGroups'","typeName":"Group"}}]}
+200 , frecentProjects , RES:
+{"errors":[{"message":"Field must have selections (field 'frecentProjects' returns Project but has no selections. Did you mean 'frecentProjects { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","frecentProjects"],"extensions":{"code":"selectionMismatch","nodeName":"field 'frecentProjects'","typeName":"Project"}}]}
+200 , geoNode , RES:
+{"errors":[{"message":"Field must have selections (field 'geoNode' returns GeoNode but has no selections. Did you mean 'geoNode { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","geoNode"],"extensions":{"code":"selectionMismatch","nodeName":"field 'geoNode'","typeName":"GeoNode"}}]}
+200 , googleCloudArtifactRegistryRepositoryArtifact , RES:
+{"errors":[{"message":"Field 'googleCloudArtifactRegistryRepositoryArtifact' is missing required arguments: googleCloudProjectId, location, repository, image, projectPath","locations":[{"line":2,"column":7}],"path":["query try","googleCloudArtifactRegistryRepositoryArtifact"],"extensions":{"code":"missingRequiredArguments","className":"Field","name":"googleCloudArtifactRegistryRepositoryArtifact","arguments":"googleCloudProjectId, location, repository, image, projectPath"}}]}
+200 , instanceExternalAuditEventDestinations , RES:
+{"errors":[{"message":"Field must have selections (field 'instanceExternalAuditEventDestinations' returns InstanceExternalAuditEventDestinationConnection but has no selections. Did you mean 'instanceExternalAuditEventDestinations { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","instanceExternalAuditEventDestinations"],"extensions":{"code":"selectionMismatch","nodeName":"field 'instanceExternalAuditEventDestinations'","typeName":"InstanceExternalAuditEventDestinationConnection"}}]}
+200 , instanceGoogleCloudLoggingConfigurations , RES:
+{"errors":[{"message":"Field must have selections (field 'instanceGoogleCloudLoggingConfigurations' returns InstanceGoogleCloudLoggingConfigurationTypeConnection but has no selections. Did you mean 'instanceGoogleCloudLoggingConfigurations { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","instanceGoogleCloudLoggingConfigurations"],"extensions":{"code":"selectionMismatch","nodeName":"field 'instanceGoogleCloudLoggingConfigurations'","typeName":"InstanceGoogleCloudLoggingConfigurationTypeConnection"}}]}
+200 , instanceSecurityDashboard , RES:
+{"errors":[{"message":"Field must have selections (field 'instanceSecurityDashboard' returns InstanceSecurityDashboard but has no selections. Did you mean 'instanceSecurityDashboard { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","instanceSecurityDashboard"],"extensions":{"code":"selectionMismatch","nodeName":"field 'instanceSecurityDashboard'","typeName":"InstanceSecurityDashboard"}}]}
+200 , integrationExclusions , RES:
+{"errors":[{"message":"Field must have selections (field 'integrationExclusions' returns IntegrationExclusionConnection but has no selections. Did you mean 'integrationExclusions { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","integrationExclusions"],"extensions":{"code":"selectionMismatch","nodeName":"field 'integrationExclusions'","typeName":"IntegrationExclusionConnection"}}]}
+200 , licenseHistoryEntries , RES:
+{"errors":[{"message":"Field must have selections (field 'licenseHistoryEntries' returns LicenseHistoryEntryConnection but has no selections. Did you mean 'licenseHistoryEntries { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","licenseHistoryEntries"],"extensions":{"code":"selectionMismatch","nodeName":"field 'licenseHistoryEntries'","typeName":"LicenseHistoryEntryConnection"}}]}
+200 , memberRolePermissions , RES:
+{"errors":[{"message":"Field must have selections (field 'memberRolePermissions' returns CustomizablePermissionConnection but has no selections. Did you mean 'memberRolePermissions { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","memberRolePermissions"],"extensions":{"code":"selectionMismatch","nodeName":"field 'memberRolePermissions'","typeName":"CustomizablePermissionConnection"}}]}
+200 , mlModel , RES:
+{"errors":[{"message":"Field must have selections (field 'mlModel' returns MlModel but has no selections. Did you mean 'mlModel { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","mlModel"],"extensions":{"code":"selectionMismatch","nodeName":"field 'mlModel'","typeName":"MlModel"}}]}
+200 , queryComplexity , RES:
+{"errors":[{"message":"Field must have selections (field 'queryComplexity' returns QueryComplexity but has no selections. Did you mean 'queryComplexity { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","queryComplexity"],"extensions":{"code":"selectionMismatch","nodeName":"field 'queryComplexity'","typeName":"QueryComplexity"}}]}
+200 , runnerPlatforms , RES:
+{"errors":[{"message":"Field must have selections (field 'runnerPlatforms' returns RunnerPlatformConnection but has no selections. Did you mean 'runnerPlatforms { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","runnerPlatforms"],"extensions":{"code":"selectionMismatch","nodeName":"field 'runnerPlatforms'","typeName":"RunnerPlatformConnection"}}]}
+200 , runnerSetup , RES:
+{"errors":[{"message":"Field must have selections (field 'runnerSetup' returns RunnerSetup but has no selections. Did you mean 'runnerSetup { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","runnerSetup"],"extensions":{"code":"selectionMismatch","nodeName":"field 'runnerSetup'","typeName":"RunnerSetup"}}]}
+200 , runnerUsage , RES:
+{"errors":[{"message":"Field must have selections (field 'runnerUsage' returns CiRunnerUsage but has no selections. Did you mean 'runnerUsage { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","runnerUsage"],"extensions":{"code":"selectionMismatch","nodeName":"field 'runnerUsage'","typeName":"CiRunnerUsage"}}]}
+200 , runnerUsageByProject , RES:
+{"errors":[{"message":"Field must have selections (field 'runnerUsageByProject' returns CiRunnerUsageByProject but has no selections. Did you mean 'runnerUsageByProject { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","runnerUsageByProject"],"extensions":{"code":"selectionMismatch","nodeName":"field 'runnerUsageByProject'","typeName":"CiRunnerUsageByProject"}}]}
+200 , selfManagedAddOnEligibleUsers , RES:
+{"errors":[{"message":"Field must have selections (field 'selfManagedAddOnEligibleUsers' returns AddOnUserConnection but has no selections. Did you mean 'selfManagedAddOnEligibleUsers { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","selfManagedAddOnEligibleUsers"],"extensions":{"code":"selectionMismatch","nodeName":"field 'selfManagedAddOnEligibleUsers'","typeName":"AddOnUserConnection"}}]}
+200 , selfManagedUsersQueuedForRolePromotion , RES:
+{"errors":[{"message":"Field must have selections (field 'selfManagedUsersQueuedForRolePromotion' returns UsersQueuedForRolePromotionConnection but has no selections. Did you mean 'selfManagedUsersQueuedForRolePromotion { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","selfManagedUsersQueuedForRolePromotion"],"extensions":{"code":"selectionMismatch","nodeName":"field 'selfManagedUsersQueuedForRolePromotion'","typeName":"UsersQueuedForRolePromotionConnection"}}]}
+200 , subscriptionFutureEntries , RES:
+{"errors":[{"message":"Field must have selections (field 'subscriptionFutureEntries' returns SubscriptionFutureEntryConnection but has no selections. Did you mean 'subscriptionFutureEntries { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","subscriptionFutureEntries"],"extensions":{"code":"selectionMismatch","nodeName":"field 'subscriptionFutureEntries'","typeName":"SubscriptionFutureEntryConnection"}}]}
+200 , syntheticNote , RES:
+{"errors":[{"message":"Field must have selections (field 'syntheticNote' returns Note but has no selections. Did you mean 'syntheticNote { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","syntheticNote"],"extensions":{"code":"selectionMismatch","nodeName":"field 'syntheticNote'","typeName":"Note"}}]}
+200 , usageTrendsMeasurements , RES:
+{"errors":[{"message":"Field must have selections (field 'usageTrendsMeasurements' returns UsageTrendsMeasurementConnection but has no selections. Did you mean 'usageTrendsMeasurements { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","usageTrendsMeasurements"],"extensions":{"code":"selectionMismatch","nodeName":"field 'usageTrendsMeasurements'","typeName":"UsageTrendsMeasurementConnection"}}]}
+200 , wikiPage , RES:
+{"errors":[{"message":"Field must have selections (field 'wikiPage' returns WikiPage but has no selections. Did you mean 'wikiPage { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","wikiPage"],"extensions":{"code":"selectionMismatch","nodeName":"field 'wikiPage'","typeName":"WikiPage"}}]}
+200 , workItemsByReference , RES:
+{"errors":[{"message":"Field must have selections (field 'workItemsByReference' returns WorkItemConnection but has no selections. Did you mean 'workItemsByReference { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","workItemsByReference"],"extensions":{"code":"selectionMismatch","nodeName":"field 'workItemsByReference'","typeName":"WorkItemConnection"}}]}
+200 , workspace , RES:
+{"errors":[{"message":"Field must have selections (field 'workspace' returns Workspace but has no selections. Did you mean 'workspace { ... }'?)","locations":[{"line":2,"column":7}],"path":["query try","workspace"],"extensions":{"code":"selectionMismatch","nodeName":"field 'workspace'","typeName":"Workspace"}}]}

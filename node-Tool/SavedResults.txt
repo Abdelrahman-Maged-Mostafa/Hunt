@@ -1,0 +1,23 @@
+
+
+in Query ::::::
+issue  /:::::milestones
+namespace
+groups
+project
+jobs
+metadata  /
+
+
+
+
+
+
+
+milestones Query is       = milestones in burp
+
+
+
+try Token work or not =>>>>>
+
+curl --header "Private-Token: KyD_he7StJpxfPKKBqjh" "https://gitlab.com/api/v4/projects"
