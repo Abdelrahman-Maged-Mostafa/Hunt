@@ -1,0 +1,21 @@
+https://github.com/swisskyrepo/PayloadsAllTheThings
+
+https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/api/projects.rb
+https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/assets/javascripts
+https://gitlab.com/gitlab-org/gitlab/-/blob/master/doc/api/api_resources.md?ref_type=heads
+https://gitlab.com/URhackerone2/gitlab/-/blob/master/config/routes/project.rb?ref_type=heads
+
+
+
+
+/-/graphql-explorer
+/api/glql
+/api/graphql
+
+
+/uploads/-/system/project/avatar/68939674/payload_in_all_known_metadata.tiff   octet-stream
+/uploads/-/system/project/avatar/67924414/poda.png       text/plain
+
+kopar/meta    private project for abdelrahman_maged@wearehackerone.com
+
+my Report https://gitlab.com/gitlab-org/gitlab/-/issues/521619
