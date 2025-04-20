@@ -1,0 +1,19 @@
+ciMinutesUsage::::::complianceRequirementControls
+
+
+we in line 135 
+200 , epicBoardList , RES:
+in gitlab graphql Query
+
+and we need to learn what label and metadata and epics   in query  epicBoardList 
+
+
+
+gitlab Test Account
+abdelrahman_maged@wearehackerone.com
+last session 54af4dd7a6fd878443ef94a487a6d5d7
+abdm@wearehackerone.com
+3425714@Test
+
+c2ac8534c56b6be84d79cd71fc204288  old Account
+0b6ee7b0e84339b0171fda39f0622356   new Account
